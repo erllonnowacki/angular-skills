@@ -1,3 +1,44 @@
-.example-card {
-    max-width: 400px;
-  }
+mat-card {
+  padding: 10px;
+  display: inline-block;
+  text-align: center;
+  border-radius: 8px;
+  min-height: 330px;
+}
+
+mat-card-header {
+  min-height: 30px;
+  font-family: 'Nunito', sans-serif;
+  display: contents;
+}
+
+mat-card-title {
+  margin: 16px 12px 22px 12px;
+  color: #233674;
+}
+
+mat-card-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+mat-card-actions {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-direction: row;
+}
+
+img {
+  width: 180px;
+  height: 160px;
+  margin-bottom: 10px;
+}
+
+p {
+  text-align: justify;
+  font-size: 12px;
+  line-break: loose;
+  min-height: 70px;
+}
