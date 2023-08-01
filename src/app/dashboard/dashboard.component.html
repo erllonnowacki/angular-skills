@@ -1,2 +1,12 @@
 <!--TODO: melhorar o layout dos cards para exibir ao menos 2 por linha em telas > md, e pequenas (sm) 1 -->
-<app-card [card]="card" *ngFor="let card of cards"></app-card>
+
+<ng-container>
+  <mat-progress-spinner class="spinner" [color]="spinnerColor" [mode]="spinnerMode" *ngIf="isLoading">
+  </mat-progress-spinner>
+</ng-container>
+
+<mat-grid-list [cols]="cols" rowHeight="400px" gutterSize="20px" *ngIf="!isLoading">
+  <mat-grid-tile *ngFor="let card of cards" class="tile">
+    <app-card [card]="card"></app-card>
+  </mat-grid-tile>
+</mat-grid-list>
