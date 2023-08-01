@@ -1,2 +1,19 @@
 /* Add application styles & imports to this file! */
 @import "~@angular/material/prebuilt-themes/indigo-pink.css";
+
+* {
+    box-sizing: border-box;
+}
+
+html,
+body {
+    height: 100%;
+    font-family: "Nunito", sans-serif;
+    margin: 5px;
+    background-color: #f8f8f8;
+}
+
+.mat-progress-spinner circle,
+.mat-spinner circle {
+    stroke: red;
+}
